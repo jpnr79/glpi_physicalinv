@@ -1,0 +1,259 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class ComputerType\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/inventory.class.php
+
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class State\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/inventory.class.php
+
+		-
+			message: '#^Instantiated class Infocom not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/inventory.class.php
+
+		-
+			message: '#^Method PluginPhysicalinvInventory\:\:showSearchForm\(\) should return true but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/inventory.class.php
+
+		-
+			message: '#^Call to an undefined method PluginPhysicalinvProfile\:\:showLegend\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: inc/profile.class.php
+
+		-
+			message: '#^Call to an undefined static method ProfileRight\:\:deleteProfileRights\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: inc/profile.class.php
+
+		-
+			message: '#^Method PluginPhysicalinvProfile\:\:getTabNameForItem\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: inc/profile.class.php
+
+		-
+			message: '#^Call to an undefined method Bootstrap\:\:assertTrue\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: phpunit/0_Install/BootstrapTest.php
+
+		-
+			message: '#^Call to an undefined method GLPIInstallTest\:\:assertEquals\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: phpunit/0_Install/GLPIInstallTest.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/config/based_config\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/0_Install/GLPIInstallTest.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/inc/dbmysql\.class\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/0_Install/GLPIInstallTest.php
+
+		-
+			message: '#^Path in require_once\(\) "commonfunction\.php" is not a file or it does not exist\.$#'
+			identifier: requireOnce.fileNotFound
+			count: 1
+			path: phpunit/0_Install/GLPIInstallTest.php
+
+		-
+			message: '#^Call to an undefined method PhysicalinvInstallTest\:\:assertEquals\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: phpunit/0_Install/PhysicalinvInstallTest.php
+
+		-
+			message: '#^Call to an undefined method PhysicalinvInstallTest\:\:assertTrue\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: phpunit/0_Install/PhysicalinvInstallTest.php
+
+		-
+			message: '#^Call to an undefined method SaveInstallTest\:\:assertFileExists\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: phpunit/0_Install/SaveInstallTest.php
+
+		-
+			message: '#^Call to an undefined method SaveInstallTest\:\:assertGreaterThan\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: phpunit/0_Install/SaveInstallTest.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/config/based_config\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/0_Install/SaveInstallTest.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/inc/dbmysql\.class\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/0_Install/SaveInstallTest.php
+
+		-
+			message: '#^Call to an undefined method InventoryTest\:\:assertEquals\(\)\.$#'
+			identifier: method.notFound
+			count: 6
+			path: phpunit/1_Unit/InventoryTest.php
+
+		-
+			message: '#^Instantiated class Auth not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: phpunit/1_Unit/InventoryTest.php
+
+		-
+			message: '#^Instantiated class Computer not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: phpunit/1_Unit/InventoryTest.php
+
+		-
+			message: '#^Instantiated class Monitor not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: phpunit/1_Unit/InventoryTest.php
+
+		-
+			message: '#^Instantiated class NetworkEquipment not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: phpunit/1_Unit/InventoryTest.php
+
+		-
+			message: '#^Instantiated class Phone not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: phpunit/1_Unit/InventoryTest.php
+
+		-
+			message: '#^Access to undefined constant Session\:\:NORMAL_MODE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: phpunit/Common_TestCase.php
+
+		-
+			message: '#^Call to an undefined method Common_TestCase\:\:markTestIncomplete\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: phpunit/Common_TestCase.php
+
+		-
+			message: '#^Call to an undefined static method Common_TestCase\:\:assertEquals\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: phpunit/Common_TestCase.php
+
+		-
+			message: '#^Call to an undefined static method Common_TestCase\:\:assertFileExists\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: phpunit/Common_TestCase.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:cleanParametersURL\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: phpunit/Common_TestCase.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/config/based_config\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/Common_TestCase.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/inc/dbmysql\.class\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/Common_TestCase.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/inc/timer\.class\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/Common_TestCase.php
+
+		-
+			message: '#^Call to an undefined method GLPIlogs\:\:assertEquals\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: phpunit/LogTest.php
+
+		-
+			message: '#^Instantiated class PHPUnit_Framework_TestSuite not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: phpunit/LogTest.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/config/based_config\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/RestoreDatabase_TestCase.php
+
+		-
+			message: '#^Path in include_once\(\) "/var/www/glpi/inc/dbmysql\.class\.php" is not a file or it does not exist\.$#'
+			identifier: includeOnce.fileNotFound
+			count: 1
+			path: phpunit/RestoreDatabase_TestCase.php
+
+		-
+			message: '#^Path in require_once\(\) "/var/www/glpi/inc/autoload\.function\.php" is not a file or it does not exist\.$#'
+			identifier: requireOnce.fileNotFound
+			count: 1
+			path: phpunit/bootstrap.php
+
+		-
+			message: '#^Access to undefined constant Session\:\:DEBUG_MODE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: scripts/cli_install.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:loadLanguage\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: scripts/cli_install.php
+
+		-
+			message: '#^Call to an undefined method \$this\(Docopt\\Pattern\)\:\:flat\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: scripts/docopt.php
+
+		-
+			message: '#^Call to an undefined method Docopt\\ChildPattern\:\:singleMatch\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: scripts/docopt.php
+
+		-
+			message: '#^Instantiated class UnexpectedValueExeption not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: scripts/docopt.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 2
+			path: scripts/docopt.php
