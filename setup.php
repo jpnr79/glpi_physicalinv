@@ -85,7 +85,13 @@ function plugin_version_physicalinv() {
            'author'         => '<a href="mailto:david@durieux.family">David DURIEUX</a>
                                 & <a href="mailto:dcs.glpi@dcsit-group.com">DCS company</a>',
            'homepage'       => 'https://github.com/ddurieux/glpi_physicalinv',
-           'minGlpiVersion' => '9.4'
+           'minGlpiVersion' => '9.4',
+           'requirements'   => [
+               'glpi' => [
+                   'min' => '9.4',
+                   'max' => '12.0'
+               ]
+           ]
    ];
 }
 
@@ -104,8 +110,8 @@ function plugin_physicalinv_check_prerequisites() {
       $_SESSION['glpi_plugins'] = [];
    }
 
-   if (version_compare(GLPI_VERSION, '9.4', 'lt') || version_compare(GLPI_VERSION, '9.5', 'ge')) {
-      echo __('Your GLPI version not compatible, require >= 9.4 and < 9.5', 'physicalinv');
+   if (version_compare(GLPI_VERSION, '9.4', 'lt') || version_compare(GLPI_VERSION, '12.0', 'ge')) {
+      echo __('Your GLPI version not compatible, require >= 9.4 and < 12.0', 'physicalinv');
       return FALSE;
    }
    return TRUE;
